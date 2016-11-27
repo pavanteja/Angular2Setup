@@ -9,18 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AccComponent = (function () {
-    function AccComponent() {
-        this.name = 'Angular';
+var platform_browser_1 = require('@angular/platform-browser');
+var index_component_1 = require('./index.component');
+var dashboard_component_1 = require('./dashboard/dashboard.component');
+var IndexModule = (function () {
+    function IndexModule() {
     }
-    AccComponent = __decorate([
-        core_1.Component({
-            selector: 'my-acc',
-            template: "<h1>Hello {{name}} from Acc</h1>",
+    IndexModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [index_component_1.IndexComponent, dashboard_component_1.DashboardComponent],
+            bootstrap: [index_component_1.IndexComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AccComponent);
-    return AccComponent;
+    ], IndexModule);
+    return IndexModule;
 }());
-exports.AccComponent = AccComponent;
-//# sourceMappingURL=acc.component.js.map
+exports.IndexModule = IndexModule;
+//# sourceMappingURL=index.module.js.map

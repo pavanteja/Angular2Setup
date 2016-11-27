@@ -9,20 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-var AppModule = (function () {
-    function AppModule() {
+var DashboardComponent = (function () {
+    function DashboardComponent() {
+        this.name = 'Directive';
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
+    DashboardComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'dashboard',
+            templateUrl: 'dashboard-component.html',
+            styleUrls: ['dashboard-component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], DashboardComponent);
+    return DashboardComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.DashboardComponent = DashboardComponent;
+//# sourceMappingURL=dashboard.component.js.map

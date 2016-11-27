@@ -9,20 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var acc_component_1 = require('./acc.component');
-var AccModule = (function () {
-    function AccModule() {
+var AccountComponent = (function () {
+    function AccountComponent() {
+        this.name = 'Angular';
     }
-    AccModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [acc_component_1.AccComponent],
-            bootstrap: [acc_component_1.AccComponent]
+    AccountComponent = __decorate([
+        core_1.Component({
+            selector: 'my-acc',
+            template: "<h1>Hello {{name}} from Acc</h1>",
         }), 
         __metadata('design:paramtypes', [])
-    ], AccModule);
-    return AccModule;
+    ], AccountComponent);
+    return AccountComponent;
 }());
-exports.AccModule = AccModule;
-//# sourceMappingURL=acc.module.js.map
+exports.AccountComponent = AccountComponent;
+//# sourceMappingURL=account.component.js.map

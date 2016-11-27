@@ -4,4 +4,4 @@ import { Component } from '@angular/core';
   selector: 'my-acc',
   template: `<h1>Hello {{name}} from Acc</h1>`,
 })
-export class AccComponent  { name = 'Angular'; }
+export class AccountComponent  { name = 'Angular'; }

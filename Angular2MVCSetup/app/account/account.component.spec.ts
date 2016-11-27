@@ -1,25 +1,25 @@
 /* tslint:disable:no-unused-variable */
-import { AccComponent } from './acc.component';
+import { AccountComponent } from './account.component';
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 ////////  SPECS  /////////////
-describe('AccComponent', function () {
+describe('AccountComponent', function () {
   let de: DebugElement;
-  let comp: AccComponent;
-  let fixture: ComponentFixture<AccComponent>;
+  let comp: AccountComponent;
+  let fixture: ComponentFixture<AccountComponent>;
 
   beforeEach(async(() => {
    TestBed.configureTestingModule({
-      declarations: [ AccComponent ]
+       declarations: [AccountComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AccComponent);
+      fixture = TestBed.createComponent(AccountComponent);
     comp = fixture.componentInstance;
     de = fixture.debugElement.query(By.css('h1'));
   });
